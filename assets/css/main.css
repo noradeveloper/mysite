@@ -183,45 +183,43 @@ button.navtoggle span{
 }
 
 .article-search {
-  margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: white;
-    border: 2px solid #ced4da;
-    border-radius: 30px;
-    padding: 10px;
-    }
+ left: 50%;
+right:50%;
+margin-top: 20px;
+align-items: center;
+   }
 
     .search_input{
+      align-items: center;
     color: black;
-    border: 0;
+    margin-bottom: auto;
+      margin-top: auto;
+      height: 45px;
+      width:100%;
+      background-color: white;
+      border: 2px solid #ced4da;
+      border-radius: 30px;
+      padding: 10px;
     outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 50px;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
     }
 
     .search_icon{
-    height: 40px;
-    width: 40px;
+      text-decoration: none;
     float: right;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:white;
+    color:black;
+    margin-top: -30px;
+    margin-right: 20px;
+    }
+    .search_icon .fas{
+    z-index: 4;
+    }
+    .col-centered{
+      float: none;
+margin: 0 auto;
     }
 
 .card-img-bottom {
