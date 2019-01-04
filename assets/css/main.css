@@ -160,7 +160,7 @@ button.navtoggle span{
   margin-right: 40px;
 }
 .project {
-  background: url("assets/img/about-section.png");
+  background: url("../img/about-section.png");
   position: center bottom;
   background-size: cover;
   height: 600px;
