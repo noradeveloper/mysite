@@ -111,7 +111,7 @@ button.navtoggle span{
   padding-bottom: 8px;
 }
 .jumbotron-fluid {
-  background-image: url("../img/header-home.jpg");
+  background-image: url("../img/header-home.png");
   position: center bottom;
   background-size: cover;
   height: 600px;
