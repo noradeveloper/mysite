@@ -160,7 +160,7 @@ button.navtoggle span{
   margin-right: 40px;
 }
 .project {
-  background: url("https://github.com/noradeveloper/mysite/blob/master/assets/img/about-section.png");
+  background: url("assets/img/about-section.png");
   position: center bottom;
   background-size: cover;
   height: 600px;
