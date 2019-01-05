@@ -1,70 +1,77 @@
 /* ------------ Base structure ---------------------------------*/
 
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
 body {
-    background-color: #FAFAFA;
-    font-family: 'Karla', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  background-color: #FAFAFA;
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-    border-top: 4px solid #f6bf74;
-    border-radius: 3px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-top: 4px solid #f6bf74;
+  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
 }
+
 /*------------ navbar ---------------------------------*/
 
 .navbar {
-    vertical-align: middle;
-    padding:10px 10px;
-    background-color: white !important;
-    border-bottom: 5px solid #c69e2d;
-    text-align:center;
-}
-.navbar .navbar-collapse {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;
+  vertical-align: middle;
+  padding: 10px 10px;
+  background-color: white !important;
+  border-bottom: 5px solid #c69e2d;
+  text-align: center;
 }
 
+.navbar .navbar-collapse {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
 
 .navbar-brand {
-    padding: 0px;
-    margin: auto;
-    color: #c69e2d;
+  padding: 0px;
+  margin: auto;
+  color: #c69e2d;
 }
+
 .navbar-brand img {
   width: 75px;
   height: 75px;
 }
-.navbar-nav ul{
+
+.navbar-nav ul {
   margin: 0;
   padding: 0;
-  display:inline-block;
+  display: inline-block;
   list-style: none;
+}
 
-}
 .navbar-nav ul li {
-    display: inline-block;
+  display: inline-block;
 }
-.navbar-nav a{
+
+.navbar-nav a {
   color: #333;
   font-size: 20px;
   text-decoration: none;
   padding: 10px;
 }
+
 .navbar-nav a:hover {
   color: #c69e2d;
   background-color: #fff !important;
@@ -74,24 +81,30 @@ body {
   color: #c69e2d;
   background-color: #fff !important;
 }
-.navbar-nav a:focus{
+
+.navbar-nav a:focus {
   color: #c69e2d;
   background-color: #fff !important;
+}
 
-}
 .navbar button {
-    outline:0;
+  outline: 0;
 }
-.navbar-light .navbar-toggler{
+
+.navbar-light .navbar-toggler {
   border: 1px solid #333;
 }
+
 .navbar-light .navbar-toggler:hover {
-    border: 1px solid #c69e2d;
+  border: 1px solid #c69e2d;
 }
+
 .navbar-light .navbar-toggler-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#c69e2d' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 /*footer css*/
+
 @media (max-width: 992px) {
   .flex-footer {
     display: block;
@@ -108,6 +121,7 @@ body {
   font-size: 14px;
   padding-bottom: 8px;
 }
+
 .jumbotron-fluid {
   background-image: url("../img/header-home.png");
   position: center bottom;
@@ -157,6 +171,7 @@ body {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 .project {
   background: url("../img/about-section.png");
   position: center bottom;
@@ -181,45 +196,47 @@ body {
 }
 
 .article-search {
- left: 50%;
-right:50%;
-margin-top: 20px;
-align-items: center;
-   }
-
-    .search_input{
-      align-items: center;
-    color: black;
-    margin-bottom: auto;
-      margin-top: auto;
-      height: 45px;
-      width:100%;
-      background-color: white;
-      border: 2px solid #ced4da;
-      border-radius: 30px;
-      padding: 10px;
-    outline: 0;
-    }
-
-    .search_icon{
-      text-decoration: none;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:black;
-    margin-top: -30px;
-    margin-right: 20px;
-    }
-    .search_icon .svg-inline--fa.fa-w-16 {
-    z-index: 4;
-    width: 1em;
+  left: 50%;
+  right: 50%;
+  margin-top: 20px;
+  align-items: center;
 }
-    .col-centered{
-      float: none;
-margin: 0 auto;
-    }
+
+.search_input {
+  align-items: center;
+  color: black;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 45px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #ced4da;
+  border-radius: 30px;
+  padding: 10px;
+  outline: 0;
+}
+
+.search_icon {
+  text-decoration: none;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: black;
+  margin-top: -30px;
+  margin-right: 20px;
+}
+
+.search_icon .svg-inline--fa.fa-w-16 {
+  z-index: 4;
+  width: 1em;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
 
 .card-img-bottom {
   background-size: cover;
@@ -232,7 +249,6 @@ margin: 0 auto;
 .card-deck {
   padding: 10px;
 }
-
 
 .card-deck .card:hover {
   box-shadow: 0 1px 16px 0 #f6bf74;
@@ -293,45 +309,46 @@ margin: 0 auto;
   background-size: cover;
   height: 600px;
   width: 100%;
-  padding-top:70px;
+  padding-top: 70px;
   padding-bottom: 35px;
 }
-.contact form .form-control{
-  background:#f6f8fa;
-  height:60px;
-  border:1px solid #eef2f6;
+
+.contact form .form-control {
+  background: #f6f8fa;
+  height: 60px;
+  border: 1px solid #eef2f6;
   box-shadow: none;
-  width:100%;
+  width: 100%;
 }
-.contact form .form-control textarea{
-  background:#f6f8fa;
-  height:60px;
-  border:1px solid #eef2f6;
+
+.contact form .form-control textarea {
+  background: #f6f8fa;
+  height: 60px;
+  border: 1px solid #eef2f6;
   box-shadow: none;
-  width:100%;
+  width: 100%;
 }
-.contact button{
-height:60px;
-  width:100%;
+
+.contact button {
+  height: 60px;
+  width: 100%;
   margin-top: 10px;
 }
+
 #input-message {
   height: 200px;
 }
 
 /*---- XS ----*/
+
 @media (max-width: 767px) {
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #fff;
-}
-
-.card-deck .card .card-block .card-text {
-  margin-bottom: 60px;
-}
-
-.card-deck .card .card-block {
-  padding: 1.25rem;
-}
+  }
+  .card-deck .card .card-block .card-text {
+    margin-bottom: 60px;
+  }
+  .card-deck .card .card-block {
+    padding: 1.25rem;
+  }
 }
