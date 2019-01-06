@@ -186,6 +186,54 @@ body {
   color: white;
 }
 
+.project-container {
+  position: relative;
+  text-align: center;
+  padding-top: 5%;
+}
+.dev-desk {
+  background-color: #f7bf74;
+}
+
+.dev-app {
+  background-color: #78c4e4;
+}
+
+.dev-web {
+  background-color: #98ceae;
+}
+
+.dev-game {
+  background-color: #5f6a70;
+}
+.des-container {
+  vertical-align: middle;
+  margin-top: 30%;
+}
+.pos{
+    margin-left: 0;
+  display: inline-block;
+}
+.des-uiux {
+  background-color: #5f6a70;
+}
+
+.des-flyer {
+  background-color: #f7bf74;
+}
+
+.des-motiongraphic {
+  background-color: #f7d2a5;
+}
+
+.des-digitalart {
+  background-color: #c44f3e;
+}
+.box-dimension{
+  width:200px;
+  height: 200px;
+}
+
 .article {
   background: #f5f5f5;
 }
@@ -278,7 +326,7 @@ body {
   line-height: 25px;
   background-color: #f4f4f4;
   border: 1px solid #f4f4f4;
-  margin-left: 45px;
+  margin-left: 35px;
   position: absolute;
   bottom: 10px;
 }
@@ -296,6 +344,7 @@ body {
   height: 40px;
   line-height: 42px;
   padding-left: 8px;
+  margin-left: -10px;
   font-size: 25px;
   color: white;
   background-color: #f6bf74;
@@ -350,5 +399,20 @@ body {
   }
   .card-deck .card .card-block {
     padding: 1.25rem;
+  }
+
+  .about .about-text{
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+   .about span {
+     height: 40px;
+         width: 40px;
+         line-height: 35px;
+         font-size: 20px;
+         display: inline-block;
+         margin-left: 10px;
+         margin-right: 10px;
+}
   }
 }
