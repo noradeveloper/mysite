@@ -426,6 +426,7 @@ body {
 .box-dimension p{
   font-size: 12px;
 }
+
 .card {
     padding-top: 0;
     padding-left: 0;
@@ -433,16 +434,12 @@ body {
     margin-bottom: 10px;
     width: 100%;
 }
-.card-text {
-  font-size: 12px;
-}
 
 .card .wrapper {
   background-color: #fff;
-  min-height: 540px;
+  min-height: 440px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 .card .wrapper:hover .data {
   -webkit-transform: translateY(0);
@@ -463,54 +460,54 @@ body {
   position: relative;
   z-index: 1;
 }
-.card .author {
-  font-size: 12px;
-}
 .card .title {
   margin-top: 10px;
 }
 .card .text {
+  display: block;
   height: 70px;
   margin: 0;
 }
-
-.example-1 .wrapper {
-  background: url(https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80) 20% 1%/cover no-repeat;
+.card .article-more{
+ line-height: 20px;
+   position: absolute;
+   bottom:0;
 }
-.example-1 .date {
+
+.wrapper {
+  background: url(../img/postsThumbnails/post-2.jpg) 10% 1%/cover no-repeat;
+}
+.date {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #77d7b9;
+  background-color: #f6bf74;
   color: #fff;
   padding: 0.8em;
 }
-.example-1 .date span {
+.date span {
   display: block;
   text-align: center;
 }
-.example-1 .date .day {
+.date .day {
   font-weight: 700;
   font-size: 10px;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
 }
-.example-1 .date .month {
+.date .month {
   text-transform: uppercase;
 }
-.example-1 .date .month,
-.example-1 .date .year {
+.date .month,
+.date .year {
   font-size: 12px;
 }
-.example-1 .content {
+.content {
   background-color: #fff;
+  height: 250px;
   box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
 }
-.example-1 .title a {
+.title a {
   color: gray;
-}
-
-#myCarousel{
-  width: 100%;
 }
 .carousel {
   width: 100%;
@@ -518,17 +515,14 @@ body {
 }
 
 .carousel-cell {
-  width: 70%;
-  counter-increment: carousel-cell;
-  margin-left: 10px;
+  width: 65%;
+  margin: 10px;
 }
 
 /* cell number */
 .carousel-cell:before {
   display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  color: white;
+  color: none;
 }
 
 
