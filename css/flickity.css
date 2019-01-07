@@ -1,5 +1,5 @@
-/*! Flickity v2.0.5
-http://flickity.metafizzy.co
+/*! Flickity v2.1.2
+https://flickity.metafizzy.co
 ---------------------------------------------- */
 
 .flickity-enabled {
@@ -42,32 +42,49 @@ http://flickity.metafizzy.co
   cursor: grabbing;
 }
 
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: #333;
+}
+
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  position: absolute;
   top: 50%;
   width: 44px;
   height: 44px;
-  border: none;
   border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
-  cursor: pointer;
   /* vertically center */
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.flickity-prev-next-button:hover { background: white; }
-
-.flickity-prev-next-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #09F;
-}
-
-.flickity-prev-next-button:active {
-  opacity: 0.6;
+  transform: translateY(-50%);
 }
 
 .flickity-prev-next-button.previous { left: 10px; }
@@ -82,12 +99,7 @@ http://flickity.metafizzy.co
   left: 10px;
 }
 
-.flickity-prev-next-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-}
-
-.flickity-prev-next-button svg {
+.flickity-prev-next-button .flickity-button-icon {
   position: absolute;
   left: 20%;
   top: 20%;
@@ -95,28 +107,8 @@ http://flickity.metafizzy.co
   height: 60%;
 }
 
-.flickity-prev-next-button .arrow {
-  fill: #333;
-}
-
-.carousel-cell {
-  width: 55%;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-/*.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}*/
-
 /* ---- page dots ---- */
+
 .flickity-page-dots {
   position: absolute;
   width: 100%;
@@ -128,30 +120,9 @@ http://flickity.metafizzy.co
   line-height: 1;
 }
 
-.carousel_btn{
-position: absolute;
-    bottom: 5px;
-	width: 50%;
-	margin-left: 20%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.workshop_carousel_btn{
-	background-color: #6EC0FD;
-}
-.general_mission_carousel_btn{
-	background-color: #64A974;
-}
-.online_carousel_btn{
-    background-color: #D56853;
-}
-
-.carousel-cell.mission_card{
-	height: 330px;
-}
-
 .flickity-rtl .flickity-page-dots { direction: rtl; }
-/*.flickity-page-dots .dot {
+
+.flickity-page-dots .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -164,4 +135,4 @@ position: absolute;
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
-}*/
+}
