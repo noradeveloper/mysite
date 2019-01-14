@@ -362,31 +362,39 @@ body {
   padding-top: 70px;
   padding-bottom: 35px;
 }
-
+.contact label{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+}
 .contact form .form-control {
+  height: 50px;
+  width: 100%;
   background: #f6f8fa;
-  height: 60px;
   border: 1px solid #eef2f6;
-  box-shadow: none;
-  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 16px 0 #ccc;
 }
-
-.contact form .form-control textarea {
-  background: #f6f8fa;
-  height: 60px;
-  border: 1px solid #eef2f6;
-  box-shadow: none;
-  width: 100%;
-}
-
-.contact button {
+.contact .btn-submit {
   height: 60px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
+  background-color: #c69e2d;
+  color: white;
+  box-shadow: 0 1px 16px 0 #ccc;
+  outline: none;
+}
+.contact .btn-submit:hover,
+.btn-submit:active,
+.btn-submit:active:focus,
+.btn-submit:visited,
+.btn-submit:focus {
+  box-shadow: 0 1px 16px 0 #c69e2d;
+  outline: none;
 }
 
 #input-message {
-  height: 200px;
+  height: 260px;
 }
 
 /*---- XS ----*/
@@ -525,7 +533,28 @@ body {
   color: none;
 }
 
+.contact label{
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: black;
+}
+.contact form .form-control {
+  height: 40px;
+  width: 100%;
+  background: #f6f8fa;
+  border: 1px solid #eef2f6;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 16px 0 #ccc;
+}
+.contact .btn-submit {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
 
+#input-message {
+  height: 130px;
+}
 
 
   }
