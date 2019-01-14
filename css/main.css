@@ -181,9 +181,10 @@ body {
   color: white;
 }
 
-.project .col-6 p {
+.project p {
   font-size: 20px;
   color: white;
+  margin-top: 10px;
 }
 
 .project-container {
@@ -286,12 +287,14 @@ body {
   margin: 0 auto;
 }
 
-.card-img-bottom {
-  background-size: cover;
+.card-img-top{
+  width:auto;
+  height: 246px;
 }
 
 .card-img-left {
-  float: left;
+  width: auto;
+  height: 304px;
 }
 
 .card-deck {
@@ -549,5 +552,22 @@ body {
   height: 130px;
 }
 
+
+  }
+
+  /*---- SM ----*/
+
+  @media (max-width: 838px) {
+    .box-dimension{
+      width:150px;
+      height: 150px;
+    }
+    .box-dimension img{
+      width:70px;
+      height: 70px;
+    }
+    .box-dimension p{
+      font-size: 16px;
+    }
 
   }
